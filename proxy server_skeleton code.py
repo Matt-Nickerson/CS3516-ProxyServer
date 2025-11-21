@@ -65,7 +65,7 @@ while 1:
 		if fileExist == "false": 
 			# Create a socket on the proxyserver to connect with original server
 			c = socket(AF_INET, SOCK_STREAM)
-   			#Fill in start      #Fill in end         
+   			#Fill in start         
 			if "/" in filename:
 				hostn, path = filename.split("/", 1)
 				path = "/" + path
@@ -74,7 +74,8 @@ while 1:
 				path = "/"
 
 			print('xy:hostn', hostn, '\r\n')
-			print('xy:path', path, '\r\n')                                   
+			print('xy:path', path, '\r\n')  
+    		#Fill in end                                      
 			try:
 				# Connect to the socket to port 80
 				#Fill in start
